@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GlideDemo-NavControl">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GlideDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GlideDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="MainViewController" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746" y="131"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="MainViewController-Scene">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="MainViewController" userLabel="MainViewController" customClass="MainViewController" customModule="GlideDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="MainView" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1000" userLabel="RC-ID-1000">
+                                <rect key="frame" x="0.0" y="44" width="414" height="651"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Glide Demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1001" userLabel="RC-ID-1001">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="RC-ID-1001-Height-Eq-19"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imgView" userLabel="imgView">
+                                        <rect key="frame" x="0.0" y="19" width="300" height="200"/>
+                                        <color key="backgroundColor" name="colorAccent"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="imgView-Height-Eq-200"/>
+                                            <constraint firstAttribute="width" constant="300" id="imgView-Width-Eq-300"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" tag="1003" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1003" userLabel="RC-ID-1003">
+                                        <rect key="frame" x="0.0" y="219" width="175" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="RC-ID-1003-Width-Eq-175"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load from Resource" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load from Resource" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load from Resource" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load from Resource" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadFromResClick:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1003-btnLoadFromResClick"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1004" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1004" userLabel="RC-ID-1004">
+                                        <rect key="frame" x="0.0" y="267" width="131" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="131" id="RC-ID-1004-Width-Eq-131"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load from URL" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load from URL" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load from URL" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load from URL" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadFromURLClick:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1004-btnLoadFromURLClick"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1005" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1005" userLabel="RC-ID-1005">
+                                        <rect key="frame" x="0.0" y="315" width="161" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="161" id="RC-ID-1005-Width-Eq-161"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load With Options" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load With Options" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load With Options" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load With Options" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadWithOptions:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1005-btnLoadWithOptions"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1006" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1006" userLabel="RC-ID-1006">
+                                        <rect key="frame" x="0.0" y="363" width="280" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="RC-ID-1006-Width-Eq-280"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load into BitmapImageViewTarget" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load into BitmapImageViewTarget" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load into BitmapImageViewTarget" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load into BitmapImageViewTarget" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadInBitmapImageViewTarget:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1006-btnLoadInBitmapImageViewTarget"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1007" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1007" userLabel="RC-ID-1007">
+                                        <rect key="frame" x="0.0" y="411" width="188" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="RC-ID-1007-Width-Eq-188"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load with Circle Crop" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load with Circle Crop" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load with Circle Crop" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load with Circle Crop" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadWithCircleCrop:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1007-btnLoadWithCircleCrop"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1008" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1008" userLabel="RC-ID-1008">
+                                        <rect key="frame" x="0.0" y="459" width="302" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="RC-ID-1008-Width-Eq-302"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load with CrossFade 3 sec transition" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load with CrossFade 3 sec transition" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load with CrossFade 3 sec transition" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load with CrossFade 3 sec transition" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadWithCrossFade3Sec:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1008-btnLoadWithCrossFade3Sec"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1009" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1009" userLabel="RC-ID-1009">
+                                        <rect key="frame" x="0.0" y="507" width="263" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="RC-ID-1009-Width-Eq-263"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load with CrossFade transition" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load with CrossFade transition" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load with CrossFade transition" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load with CrossFade transition" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadCrossFade:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1009-btnLoadCrossFade"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1010" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1010" userLabel="RC-ID-1010">
+                                        <rect key="frame" x="0.0" y="555" width="109" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="RC-ID-1010-Width-Eq-109"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Load color" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Load color" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Load color" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Load color" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoadColor:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1010-btnLoadColor"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1011" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1011" userLabel="RC-ID-1011">
+                                        <rect key="frame" x="0.0" y="603" width="172" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="RC-ID-1011-Width-Eq-172"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Clearing disk cache" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Clearing disk cache" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Clearing disk cache" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Clearing disk cache" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClearDiskCache:" destination="MainViewController" eventType="touchUpInside" id="RC-ID-1011-btnClearDiskCache"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="leading" secondItem="MainView-safeArea" secondAttribute="leading" id="RC-ID-1000-matchLeading-MainView-safeArea" userLabel="RC-ID-1000-matchLeading-MainView-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="top" secondItem="MainView-safeArea" secondAttribute="top" id="RC-ID-1000-matchTop-MainView-safeArea" userLabel="RC-ID-1000-matchTop-MainView-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="trailing" secondItem="MainView-safeArea" secondAttribute="trailing" id="RC-ID-1000-matchTrailing-MainView-safeArea" userLabel="RC-ID-1000-matchTrailing-MainView-safeArea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MainView-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GlideDemo" id="MainViewController-Nav-ID"/>
+                    <connections>
+                        <outlet property="imgViewOutlet" destination="imgView" id="imgView-Outlet1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <image name="RC_btn_default_normal_disable" width="12" height="24"/>
+        <image name="RC_btn_default_selected" width="12" height="24"/>
+        <namedColor name="colorAccent">
+            <color red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
