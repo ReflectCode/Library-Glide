@@ -50,6 +50,7 @@ The Podfile is generated based on the 3rd party library required in target proje
 * error()
 * fallback()
 * clearMemory()
+
 Note - Dummy methods are added for these less frequently used features. 
 
 
