@@ -19,13 +19,17 @@
 -----
 # ReflectCode Glide Demo
 **Glide** an image loading / caching library for Android focused on smooth scrolling https://bumptech.github.io/glide/
+
 With more than 27k stars, Glide is one of the most widely used 3rd party library for Android. 
 
 ReflectCode supports the similar functionality on iOS by using **AlamofireImage** library https://github.com/Alamofire/AlamofireImage
+
 AlamofireImage provides all features offered by Glide, however the usage is very different.
+
 To bridge the gap a wrapper class "RC_Glide.swift" is used to support all the APIs defined in Glide.
 
 With this demo project RC also added support for **CocoaPods**. 
+
 The Podfile is generated based on the 3rd party library required in target project. 
 
 
@@ -60,7 +64,7 @@ Note - Dummy methods are added for these less frequently used features.
 | Project (app.iml) | project.pbxproj | 752 |
 | AndroidManifest.xml | Info.plist | 68 |
 | build.gradle | Podfile | 20 | 
-| **Total** | **2496** |
+| - | **Total** | **2496** |
 
 
 ## Dev Notes
@@ -68,7 +72,7 @@ Note - Dummy methods are added for these less frequently used features.
 
 -----
 
-## Screen shots
+## Screen recording
 
 <img src="/Visuals/ReflectCode-GlideDemo.gif" alt="ReflectCode Glide Demo GIF"/>
 
