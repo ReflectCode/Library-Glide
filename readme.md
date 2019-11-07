@@ -18,11 +18,11 @@
 
 -----
 # ReflectCode Glide Demo
-**Glide** an image loading / caching library for Android focused on smooth scrolling https://bumptech.github.io/glide/
+[**Glide**](https://bumptech.github.io/glide/) an image loading / caching library for Android focused on smooth scrolling 
 
 With more than 27k stars, Glide is one of the most widely used 3rd party library for Android. 
 
-ReflectCode supports the similar functionality on iOS by using **AlamofireImage** library https://github.com/Alamofire/AlamofireImage
+ReflectCode supports the similar functionality on iOS by using [**AlamofireImage**](https://github.com/Alamofire/AlamofireImage) library 
 
 AlamofireImage provides all features offered by Glide, however the usage is very different.
 
